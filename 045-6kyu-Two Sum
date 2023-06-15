@@ -1,0 +1,6 @@
+def two_sum(numbers, target):
+    num2index = dict()
+    for i, num in enumerate(numbers):
+        if target - num in num2index:
+            return [i, num2index[target - num]]
+        num2index[num] = i

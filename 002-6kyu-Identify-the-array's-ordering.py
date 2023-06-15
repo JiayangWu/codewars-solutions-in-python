@@ -15,7 +15,7 @@ def order_type(arr):
         return 'Constant'
     elif n[0] < n[-1]:
         for i, ele in enumerate(n[1:]):
-            if ele <n[i]:
+            if ele < n[i]:
                 return 'Unsorted'
         return 'Increasing'
     elif n[0] > n[-1]:
