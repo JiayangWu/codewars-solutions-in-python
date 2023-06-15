@@ -11,9 +11,5 @@ def spin_words(sentence):
           
     
 def reverse(word):
-  l = len(word)
-  res = ""
-  for index in range(1,l+1):
-      res += word[-index]
-#       print res
-  return res
+    rev=word[::-1]
+    return rev
